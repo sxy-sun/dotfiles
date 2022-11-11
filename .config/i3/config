@@ -182,3 +182,8 @@ bar {
 
 # Wallpaper tool
 exec_always nitrogen --restore
+
+# screenshot
+# need to sudo apt install flameshot first
+bindsym Print       exec flameshot full -p ~/Pictures
+bindsym Shift+Print exec flameshot gui
