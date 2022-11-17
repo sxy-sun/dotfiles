@@ -187,8 +187,8 @@ default_border pixel 3
 default_floating_border pixel 3
 
 # multiple monitor
-exec --no-startup-id xrandr --output DP-1 --auto --right-of HMDI-2
-exec --no-startup-id xrandr --output DP-1 --auto --left-of eDP-1
+exec --no-startup-id xrandr --output DP-1 --auto --above eDP-1
+exec --no-startup-id xrandr --output HMDI-2 --auto --right-of DP-1
 
 
 # Wallpaper tool
