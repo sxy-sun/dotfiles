@@ -182,9 +182,14 @@ bar {
         status_command i3status --config ~/.i3status.conf
 }
 
-# Doc section 4.11
+# Doc section 4.11 to have terminal without head
 default_border pixel 3
 default_floating_border pixel 3
+
+# multiple monitor
+exec --no-startup-id xrandr --output DP-1 --auto --right-of HMDI-2
+exec --no-startup-id xrandr --output DP-1 --auto --left-of eDP-1
+
 
 # Wallpaper tool
 exec_always nitrogen --restore
