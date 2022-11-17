@@ -7,6 +7,12 @@ Install with `sudo apt install xxx`
 - Screenshot: flameshot
 - File manager: nautilus
 - Status bar: i3bar
-- Display manager: Ly (Doesn't work)
+- Display manager: Ly (Doesn't work, https://github.com/fairyglade/ly/issues/450)
 - Screen lock: i3lock
-- Multiple monitor: nvidia-settings/arandr
+- Multiple monitor: xrandr
+
+## Some useful commands:
+How to restart the default display manager gdm3 [source](https://askubuntu.com/q/1361285)
+```
+sudo systemctl start gdm3
+```
